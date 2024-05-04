@@ -7,10 +7,10 @@ import (
 )
 
 func sumDigit() int {
-	var digit_str string
+	var digitStr string
 	fmt.Print("Введите числа через запятую:")
-	fmt.Scan(&digit_str)
-	elements := strings.Split(digit_str, ",")
+	fmt.Scan(&digitStr)
+	elements := strings.Split(digitStr, ",")
 	digits := make([]int, len(elements))
 	for i, element := range elements {
 		digits[i], _ = strconv.Atoi(element)
