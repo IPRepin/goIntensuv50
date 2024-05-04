@@ -18,12 +18,12 @@ func main() {
 	for {
 		fmt.Scan(&userNumber)
 		if guessNum == userNumber {
-			fmt.Println("Поздравляю ты угадал число")
+			fmt.Printf("Поздравляю ты угадал число %d", userNumber)
 			break
 		} else if guessNum > userNumber {
-			fmt.Println("Слишком маленькое число попробуй еще раз")
+			fmt.Printf("%d Слишком маленькое число попробуй еще раз", userNumber)
 		} else {
-			fmt.Println("Слишком большое число попробуй еще раз")
+			fmt.Printf("%d Слишком большое число попробуй еще раз", userNumber)
 		}
 	}
 }
